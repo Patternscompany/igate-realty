@@ -657,6 +657,11 @@
     height: 100%;
     background: rgba(0, 0, 0, .4);
 } */
+ @media(max-width:992px){
+.hero-carousel .btn{
+padding: 8px 15px !important;
+}
+ }
 
 .service .service-item .service-content {
     position: absolute;
