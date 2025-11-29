@@ -781,19 +781,20 @@ padding: 8px 15px !important;
 
 /*** Footer Start ***/
 .footer {
-    background: linear-gradient(rgba(0, 18, 72, 0.9), rgba(0, 18, 72, 1)), url(../img/footer-img.jpg);
+    background: url(../img/footer_background.webp);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .footer .footer-item a {
     line-height: 35px;
-    color: var(--bs-body);
+    color: var(--bs-white);
     transition: 0.5s;
 }
 
 .footer .footer-item p {
     line-height: 35px;
+    color: var(--bs-white);
 }
 
 .footer .footer-item a:hover {
@@ -820,7 +821,7 @@ padding: 8px 15px !important;
 /*** copyright Start ***/
 .copyright {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
-    background: var(--bs-dark);
+     background: url(../img/footer_background.webp);
 }
 /*** copyright end ***/
 
