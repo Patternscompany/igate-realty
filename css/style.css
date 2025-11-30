@@ -75,7 +75,7 @@
 }
 
 .btn.btn-secondary {
-    color: var(--bs-dark);
+    color: var(--bs-white);
     border: none;
    
 }
@@ -487,7 +487,7 @@
     margin-right: 20px;
     margin-bottom: 20px;
     background: var(--bs-white);
-    box-shadow: 20px 20px #ffd32e;
+    box-shadow: 20px 20px #db8c23;
     z-index: 3;
 }
 
@@ -854,7 +854,7 @@ padding: 8px 15px !important;
   color: white !important;
 }
 .whatsapp:hover{
-    background-color:#ffd32e !important;
+    background-color:#db8c23 !important;
 }
 .whatsapp:hover a i {
   color:var(--bs-primary) !important;
@@ -926,7 +926,7 @@ padding: 8px 15px !important;
 
 .client-location {
     font-size: 18px;
-    color: #ffd32e;
+    color: #db8c23;
 }
 
 /* Swiper Fixes */
