@@ -126,15 +126,18 @@
 
             <!-- SLIDE 1 -->
             <div class="carousel-item active">
-                <img src="img/banner/banner-4.png" class="img-fluid w-100" alt="First slide" />
+                <img src="img/banner/1.png" class="img-fluid w-100" alt="First slide" />
                 <div class="carousel-caption">
                  
 
                     <div class="d-flex justify-content-center">
-                        <a class="btn btn-primary py-3 px-5 me-2 fadeInUp animate__animated"
-                            style="animation-delay: 1.7s;" href="contact.html">Get in Touch</a>
-                        <a class="btn btn-secondary py-3 px-5 ms-2 fadeInUp animate__animated"
-                            style="animation-delay: 1.7s;" href="about.html">Read More</a>
+                         <!-- Search Bar -->
+    <div class="search-box d-flex align-items-center me-3">
+        <input type="text" class="search-input" placeholder="Address, Neighborhood, Agent, ZIP, MLS#">
+        <button class="search-btn">
+            <i class="fa fa-search"></i>
+        </button>
+    </div>
                     </div>
                 </div>
             </div>
@@ -146,7 +149,109 @@
     </div>
 </div>
 
+
+<style>
+    .search-box {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 30px;
+    overflow: hidden;
+    height: 48px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 12px 18px;
+    width: 500px;
+    background: transparent;
+    font-size: 15px;
+}
+
+.search-btn {
+    background: #000;
+    border: none;
+    width: 45px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search-btn i {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* remove outline on focus */
+.search-input:focus {
+    outline: none;
+}
+
+</style>
     <!-- Carousel End -->
+
+
+<div class="gap-4 services-mini">
+
+    <div class="mini-box">
+        <p>FIND AN AGENT</p>
+    </div>
+
+    <div class="mini-box">
+        <p>FIND A HOME</p>
+    </div>
+
+    <div class="mini-box">
+        <p>SELL A HOME</p>
+    </div>
+
+</div>
+<style>
+    .services-mini {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    text-align: center;
+    margin-top:-50px;
+    z-index:9;
+}
+
+.mini-box {
+    width: 300px;
+    height: 80px;
+    background: #ffffff;
+    border-bottom: 4px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+/* text */
+.mini-box p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    text-transform: uppercase;
+}
+
+/* Hover effect */
+.mini-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+@media(max-width:992px){
+    .services-mini {
+       margin-top: unset;
+       flex-direction: column;
+       align-items: center;
+       margin-block: 1rem;
+    }
+}
+</style>
 
     <!-- About Start -->
    <div class="container-fluid about py-5">
