@@ -226,14 +226,60 @@
     <hr class="my-5">
 
     <!-- CTA -->
-    <div class="text-center mt-4">
-        <a href="contact.html" class="btn btn-outline-dark px-5 py-3 fw-bold">
-            CONTACT ONE OF OUR EXPERT
-        </a>
-    </div>
+   <div class="text-center mt-4">
+    <button class="btn btn-outline-dark px-5 py-3 fw-bold" data-bs-toggle="modal" data-bs-target="#contactModal">
+        CONTACT ONE OF OUR EXPERT
+    </button>
+</div>
+
 
 </div>
 
+<!-- CONTACT FORM POPUP (Bootstrap Modal) -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <!-- HEADER -->
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold">Contact Our Expert</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- BODY -->
+            <div class="modal-body">
+                <form id="contactForm">
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Full Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Phone</label>
+                        <input type="text" class="form-control" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Email ID</label>
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Comment</label>
+                        <textarea class="form-control" rows="4" placeholder="Tell us how we can help" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary w-100 py-2 fw-bold">
+                        Submit Now
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 
        <!-- Footer Start -->

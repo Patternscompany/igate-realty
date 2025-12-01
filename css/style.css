@@ -13,7 +13,18 @@
     visibility: visible;
     opacity: 1;
 }
+
+    .modal-content {
+    border-radius: 12px;
+    border: none;
+    padding: 10px;
+}
+.modal-header {
+    border-bottom: none;
+}
 /*** Spinner End ***/
+
+
 
 .back-to-top {
     position: fixed;
