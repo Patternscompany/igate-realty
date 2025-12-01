@@ -54,7 +54,7 @@
                     <!-- <a href="#" class="text-muted me-4"><i class="fas fa-map-marker-alt text-secondary me-2"></i>Find A Location</a> -->
                     <a href="#" class="text-muted me-4"><i class="fas fa-phone-alt text-secondary me-2"></i>+12199294283</a>
                     <a href="#" class="text-muted me-0"><i class="fas fa-envelope text-secondary me-2"></i>
-                        igaterealty@gmail.com</a>
+                        kkhan@igaterealty.com</a>
                 </div>
             </div>
             <div class="col-lg-6 text-center text-lg-end">
@@ -152,7 +152,51 @@
     </div>
 </div>
 
+<!-- CONTACT FORM POPUP (Bootstrap Modal) -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
 
+            <!-- HEADER -->
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold">Contact Our Expert</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- BODY -->
+            <div class="modal-body">
+                <form id="contactForm">
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Full Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Phone</label>
+                        <input type="text" class="form-control" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Email ID</label>
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Comment</label>
+                        <textarea class="form-control" rows="4" placeholder="Tell us how we can help" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary w-100 py-2 fw-bold">
+                        Submit Now
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <style>
     .search-box {
@@ -206,13 +250,15 @@
 
 
 <div class="gap-4 services-mini">
-<a href="contact.html">
+<a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">
     <div class="mini-box">
         
         <p>FIND AN AGENT</p>
        
     </div>
  </a>
+
+
   <a href="find-a-home.html">
     <div class="mini-box">
        
